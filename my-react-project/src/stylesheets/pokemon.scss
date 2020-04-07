@@ -1,0 +1,28 @@
+.pokemon{
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: rgba(202, 230, 247, 0.384);
+    margin: 5px;
+    // height: 150px;
+    width: 120px;
+    &__name {
+        font-weight: bolder;
+        text-transform: capitalize;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        padding: 5px 0;
+    }
+    &__types {
+        padding: 4px 0 7px 0;
+        text-align: left;
+        &--type {
+            background-color: grey;
+            margin: 5px;
+            padding: 3px;
+            border-radius: 10px;
+            color: white;
+            text-transform: uppercase;
+            font-size: 8px;
+        }
+    }
+}

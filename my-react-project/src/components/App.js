@@ -1,14 +1,21 @@
 import React from 'react';
 // import logo from '../images/logo.svg';
-import data from '../data/pokemons'
-import '../stylesheets/App.css';
+import pokemons from '../data/pokemons'
+import PokeList from './PokeList';
+import '../stylesheets/App.scss';
 
-function App() {
-  return (
-    <div className="App">
-
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.pokemons = pokemons;
+  }
+  render() {
+    return (
+      <div className="App">
+        <PokeList pokemons={this.pokemons}/>
+      </div>
+    );
+  }
 }
 
 export default App;

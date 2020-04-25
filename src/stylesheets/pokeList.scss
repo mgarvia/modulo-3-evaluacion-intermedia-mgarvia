@@ -4,4 +4,6 @@
 .pokemon__list--list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
 }
